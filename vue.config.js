@@ -3,7 +3,16 @@ function resolve(dir) {
     return path.join(__dirname, dir)
 }
 module.exports = {
-
+    css: {
+        // 是否提取css生成单独的文件 默认 true
+        extract: false,
+        // 使用 CSS source maps?
+        sourceMap: true,
+        // loader配置
+        loaderOptions: {},
+        // 使用 css Modules
+        requireModuleExtension: true
+    },
     pwa: {
         iconPaths: {
             favicon32: 'favicon.ico',
@@ -13,7 +22,7 @@ module.exports = {
             msTileImage: 'favicon.ico'
         }
     },
-    publicPath: './',
+    publicPath: "./",
     assetsDir: 'static',
     productionSourceMap: false,
     // devServer: {

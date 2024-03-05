@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Element from 'element-ui'
 const service = axios.create({
-    baseURL: 'http://127.0.0.1:9001',
+    baseURL: 'http://v6.ca7.asia:9001',
     timeout: 5000
 });
 service.interceptors.request.use(

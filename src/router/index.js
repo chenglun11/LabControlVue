@@ -23,11 +23,6 @@ const router = new Router({
                 meta: { title: '用户信息' }
             },
             {
-                path: '/comment',
-                component: () => import(/* webpackChunkName: "icon" */ '../components/page/Comment.vue'),
-                meta: { title: '评论信息' }
-            },
-            {
                 path: '/sort',
                 component: () => import(/* webpackChunkName: "icon" */ '../components/page/Sort.vue'),
                 meta: { title: '分类信息' }
@@ -110,14 +105,7 @@ const router = new Router({
                             path: 'repair',
                             component: () => import(/* webpackChunkName: "dashboard" */ '../views/Member/components/Repair.vue'),
                             meta: {title: '我的报修'}
-                        },
-                        {
-                            path: 'collect',
-                            component: () => import(/* webpackChunkName: "dashboard" */ '../views/Member/components/Collect.vue'),
-                            meta: {title: '我的收藏'}
-                        }
-
-                    ]
+                        },                    ]
                 },
             ]
         },

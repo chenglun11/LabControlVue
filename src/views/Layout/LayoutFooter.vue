@@ -27,9 +27,7 @@
                     <dt>服务热线</dt>
                     <dd class="hotline">(025) 84890123 <small>周一至周日 8:00-18:00</small></dd>
                 </dl>
-                <dl_img>
-                    <img src="../../assets/logo_b.png" alt="" srcset="">
-                </dl_img>
+                    <img src="../../assets/logo_b.png" alt="" srcset="" style="margin: auto auto;width: 200px">
             </div>
 
             <div class="copyright">

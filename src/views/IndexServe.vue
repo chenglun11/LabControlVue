@@ -162,7 +162,7 @@ export default {
     font-size: 0.21875rem;
     color: #666666;
 
-    &:hover{
+    :hover{
       background: #41b982;
       color: #ffffff;
     }

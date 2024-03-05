@@ -13,7 +13,7 @@
    }
  }
 </script>
-<style>
+<style scoped>
 
     /*@import "./assets/css/theme-green/color-green.css";   浅绿色主题*/
 </style>

@@ -5,14 +5,16 @@ import '@/utils/flexible.js'
 import ElementUI from 'element-ui';
 import store from './store'
 import axios from 'axios'
+
+import '@/style/common.scss'
+import '@/style/var.scss'
 import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 import './components/common/directives';
 import 'babel-polyfill';
-import '@/style/common.scss'
-import '@/style/var.scss'
+
 import global_ from './utils/global' // 这个路径是相对于main.js的相对路径
 Vue.prototype.GLOBAL = global_
-axios.defaults.baseURL = window.server_ip.BASE_URL;
+axios.defaults.baseURL = "http://v6.ca7.asia:9001/api";
 Vue.config.productionTip = false;
 Vue.use(ElementUI, {
     size: 'small'
@@ -56,5 +58,4 @@ Vue.directive('highlight', function (el) {
 import JwChat from 'jwchat';
 Vue.use(JwChat)
 import './assets/icons'
-
 
