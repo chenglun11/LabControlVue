@@ -14,7 +14,7 @@ import 'babel-polyfill';
 
 import global_ from './utils/global' // 这个路径是相对于main.js的相对路径
 Vue.prototype.GLOBAL = global_
-axios.defaults.baseURL = "http://v6.ca7.asia:9001/api";
+axios.defaults.baseURL = "http://127.0.0.1/api";
 Vue.config.productionTip = false;
 Vue.use(ElementUI, {
     size: 'small'
