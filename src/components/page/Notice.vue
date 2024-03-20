@@ -16,9 +16,9 @@
                 <el-form-item>
                     <el-button type="primary"  @click="addNoticeInfo">添加</el-button>
                 </el-form-item>
-<!--                <el-form-item v-if="userType === 1">-->
-<!--                    <el-button :disabled="this.multipleSelection.length === 0" type="danger"  @click="delBatchNoticeInfo">批量删除</el-button>-->
-<!--                </el-form-item>-->
+                <el-form-item v-if="userType === 1">
+                    <el-button :disabled="this.multipleSelection.length === 0" type="danger"  @click="delBatchNoticeInfo">批量删除</el-button>
+                </el-form-item>
 
             </el-form>
             <el-table v-loading="tableDataLoading" :data="tableData" border @selection-change="selectionChange" style="width: 100%;">
@@ -50,7 +50,7 @@
                 <el-table-column label="操作" fixed="right" header-align="center" align="center" width="220" >
                     <template slot-scope="scope">
                         <el-button type="success"  size="small"  @click="updateNoticeInfo(scope.row)">更新</el-button>
-                        <el-button type="success"  size="small"  @click="updateNoticeInfo2(scope.row)">下载</el-button>
+<!--                        <el-button type="success"  size="small"  @click="updateNoticeInfo2(scope.row)">下载</el-button>-->
                         <el-button type="danger"  size="small"  @click="delNoticeInfo(scope.row.id)" v-if="userType === 1">删除</el-button>
                     </template>
                 </el-table-column>
@@ -98,7 +98,7 @@ import {
     updateNoticeInfo,
     delNoticeInfo,
     //delBatchNoticeInfo,
-    createNoticeData,
+    createNoticeData, delBatchNoticeInfo
     //delBatchNoticeInfo
 } from '@/api/notice';
 
@@ -181,9 +181,6 @@ export default {
                 this.tableData = res.data.list;
                 this.total = res.data.total;
                 this.baseUrl = res.baseUrl;
-            });
-            getSortList({pageSize:100}).then(res =>{
-                this.options = res.data.list;
             });
 
         },
@@ -324,19 +321,18 @@ export default {
         /**
          * 批量删除档案的接口
          */
-        // delBatchNoticeInfo(){
-        //     this.$confirm('确定要删除所选择的吗？', '提示', {
-        //         type: 'warning'
-        //     }).then(action => {
-        //         if (action === 'confirm') {
-        //             delBatchNoticeInfo(this.multipleSelection.join(',')).then(res =>{
-        //                 this.$message.success('批量删除成功');
-        //                 this.getData();
-        //             })
-        //         }
-        //     }).catch(() => {});
-        //
-        // },
+        delBatchNoticeInfo(){
+            this.$confirm('确定要删除所选择的吗？', '提示', {
+                type: 'warning'
+            }).then(action => {
+                if (action === 'confirm') {
+                    delBatchNoticeInfo(this.multipleSelection.join(',')).then(res => {
+                        this.$message.success('批量删除成功');
+                        this.getData();
+                    })
+                }
+            }).catch(() => {});
+        },
 
         /**
          * 重置数据
