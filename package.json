@@ -8,7 +8,7 @@
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build"
   },
   "dependencies": {
-    "@achrinza/node-ipc": "^10.1.10",
+    "node-ipc": "^11.1.0",
     "@kangc/v-md-editor": "^1.7.12",
     "axios": "^1.6.7",
     "babel-polyfill": "^6.26.0",
@@ -35,7 +35,8 @@
     "vue-video-player": "^5.0.2",
     "vuex": "^3.4.0",
     "vuex-persistedstate": "^4.1.0",
-    "webpack": "^4.29.5"
+    "webpack": "^4.29.5",
+    "pkcs7": "^1.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",

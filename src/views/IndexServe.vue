@@ -17,7 +17,7 @@
           :page-size="query.pageSize"
           :total="total"
           style="margin-top: 10px"
-          layout="total, sizes, prev, pager, next, jumper"
+          layout="total, prev, pager, next, jumper"
           @size-change="pageSizeChange"
           @current-change="pageCurrentChange">
       </el-pagination>
@@ -172,8 +172,5 @@ export default {
   }
 }
 
-/deep/.el-input--small .el-input__inner{
-  height: 0.4rem !important;
-  font-size: 0.203125rem;
-}
+
 </style>

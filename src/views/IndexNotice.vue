@@ -10,7 +10,7 @@
             :page-size="query.pageSize"
             :total="total"
             style="margin-top: 10px"
-            layout="total, sizes, prev, pager, next, jumper"
+            layout="total, prev, pager, next, jumper"
             @size-change="pageSizeChange"
             @current-change="pageCurrentChange">
         </el-pagination>

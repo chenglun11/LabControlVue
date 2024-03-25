@@ -3,7 +3,7 @@
     <div class="detail">
         <div class="place-detail">
             <div class="place-detail-bottom">
-                <div class="left">
+                <div class="left hidden-sm-and-down">
                     <img :src="detailInfo.imageUrl">
                 </div>
                 <div class="right">
@@ -318,7 +318,7 @@
         flex: 1;
         /*background-color: blue;*/
         color: #323233;
-        font-size: 0.34375rem;
+        font-size: 0.4375rem;
         padding-left: 0.3125rem;
         line-height: 0.78125rem;
     }
@@ -341,10 +341,11 @@
         /*background-color: greenyellow;*/
         color: #323233;
         font-size:0.21875rem;
+        text-align: center;
     }
     .detail .place-detail .place-detail-bottom .right .item{
         width: 95%;
-        height: 0.78125rem;
+        height: 0.98125rem;
         /*background-color: red;*/
         margin-top:0.15625rem;
         display: inline-flex;
@@ -360,7 +361,7 @@
     .detail .place-detail .place-detail-bottom .right .item .item-right{
         flex: 3;
         text-align: left;
-        line-height: 0.78125rem;
+        line-height: 0.98125rem;
     }
     .detail .place-detail .place-detail-bottom .right .item2{
         width: 95%;
@@ -448,7 +449,7 @@
       padding: 0 0;
     }
     /deep/ .vuepress-markdown-body h3 {
-      font-size: 0.46875rem;
+      font-size: 0.56875rem;
     }
     /deep/ .vuepress-markdown-body img{
       width: 100%;
@@ -458,6 +459,6 @@
     }
     /deep/ .vuepress-markdown-body p{
       line-height: 0.625rem;
-      font-size: 0.234375rem;
+      font-size: 0.334375rem;
     }
 </style>
