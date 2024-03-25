@@ -1,10 +1,11 @@
 <template>
     <div class="home-banner">
-        <el-carousel height="500px">
+        <el-carousel height="500px" class="hidden-sm-and-down" >
             <el-carousel-item v-for="(item,index) in bannerList" :key="index">
                 <img :src="item.imageUrl" style="cursor: pointer" @click="toDetail(item.id)">
             </el-carousel-item>
         </el-carousel>
+
     </div>
 </template>
 

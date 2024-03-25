@@ -123,20 +123,19 @@ export default {
 <style scoped>
 .search{
   width: 100%;
-  height:0.9375rem;
-  margin-top: 0.15625rem;
+  //height:0.9375rem;
+  //margin-top: 0.15625rem;
 //background: red;
   text-align: center;
   .search-input{
     line-height: 0.9375rem;
     width: 3.90625rem;
     margin-left: 0.3125rem;
-
   }
   .search-btn{
-    width: 1.5625rem;
+    width: auto;
     margin-left: 0.3125rem;
-    font-size: 0.1875rem;
+    //font-size: 0.1875rem;
   }
 }
 /deep/ .el-input--small .el-input__inner{

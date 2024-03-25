@@ -2,7 +2,7 @@
     <footer class="app_footer">
         <!-- 联系我们 -->
         <div class="contact">
-            <div class="container">
+            <div class="container hidden-sm-and-down">
                 <dl>
                     <dt>客户服务</dt>
                     <dd><a href="https://lchnan.cn" target="_blank"><i class="iconfont icon-kefu" ></i>在线客服</a> </dd>

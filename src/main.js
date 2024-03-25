@@ -19,7 +19,7 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI, {
     size: 'small'
 });
-
+import 'element-ui/lib/theme-chalk/display.css';
 new Vue({
     router,
     store,

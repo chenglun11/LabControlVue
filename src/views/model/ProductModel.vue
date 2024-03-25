@@ -1,12 +1,12 @@
 <template>
   <el-card class="item" >
-    <el-image :src="model.imageUrl" class="image"></el-image>
+    <el-image :src="model.imageUrl" class="image" @click="toDetail(model)"></el-image>
     <div class="title">
       <div class="name">
         {{model.labName}}
 <!--        <span style="font-size: 18px;color: red;margin-left: 10px">{{model.price}}元</span>-->
       </div>
-      <div class="introduction" :title="model.desc">
+      <div class="introduction" :title="model.desc" >
         {{model.desc}}
       </div>
       <div class="time">
