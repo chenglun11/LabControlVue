@@ -1,7 +1,7 @@
 <template> 
   <div>
     <el-upload
-            action="http://lab-sys.oss-cn-hangzhou.aliyuncs.com"
+            action="https://lab-sys.oss-cn-hangzhou.aliyuncs.com"
             :data="dataObj"
             class="avatar-uploader"
             :show-file-list="false"

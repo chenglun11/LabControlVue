@@ -1,7 +1,7 @@
 <template> 
   <div>
     <el-upload
-            action="http://lab-sys.oss-cn-hangzhou.aliyuncs.com"
+            action="https://lab-sys.oss-cn-hangzhou.aliyuncs.com"
             :data="dataObj"
             list-type="picture"
             :multiple="false" :show-file-list="showFileList"
