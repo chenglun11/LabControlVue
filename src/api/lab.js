@@ -76,11 +76,17 @@ export const delBatchLabInfo = id =>{
     })
 };
 
-
-
-export const createLabData = data =>{
+export const getBarchart = query =>{
     return request({
-        url:'/common/lab/createLabData',
-        method:'post',
+        url:'/common/lab/getBarchart',
+        method:'get',
+        params:query
     })
 };
+
+// export const createLabData = data =>{
+//     return request({
+//         url:'/common/lab/createLabData',
+//         method:'post',
+//     })
+// };

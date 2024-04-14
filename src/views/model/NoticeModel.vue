@@ -24,9 +24,6 @@
     </el-collapse>
 </template>
 <script>
-import { saveLikeInfo } from '@/api/like';
-import { updateArchivesReadCount } from '@/api/archives';
-import { saveCollectInfo } from '@/api/collect';
 
 export default {
     name: 'NoticeModel',

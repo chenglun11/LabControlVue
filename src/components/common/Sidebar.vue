@@ -69,7 +69,14 @@ export default {
                     'index': '3',
                     'title': '统一管理',
                     'subs': [
-
+                        {
+                            'id': 11,
+                            'pid': 4,
+                            'icon': 'el-icon-plus',
+                            'index': 'echart',
+                            'title': '系统总览',
+                            'subs': null
+                        },
                         {
                             'id': 11,
                             'pid': 4,

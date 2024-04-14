@@ -13,11 +13,11 @@
     </div>
       <el-pagination
           :current-page="query.pageNum"
-          :page-sizes="[8, 20, 50, 100]"
+          :page-sizes="[9, 20, 50, 100]"
           :page-size="query.pageSize"
           :total="total"
           style="margin-top: 10px"
-          layout="total, prev, pager, next, jumper"
+          layout="total, prev, pager, next"
           @size-change="pageSizeChange"
           @current-change="pageCurrentChange">
       </el-pagination>
@@ -46,7 +46,7 @@ export default {
       list:[],
       query:{
         pageNum:1,
-        pageSize:8,
+        pageSize:9,
         labName:null,
         sortName:null,
         authorName:null,

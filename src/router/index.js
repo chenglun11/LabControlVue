@@ -13,6 +13,11 @@ const router = new Router({
         meta: { title: '自述文件' },
         children: [
             {
+                path: '/echart',
+                component: () => import(/* webpackChunkName: "icon" */ '../components/page/Echart'),
+                meta: { title: '系统总览' }
+            },
+            {
                 path: '/person',
                     component: () => import(/* webpackChunkName: "icon" */ '../components/page/Person'),
                 meta: { title: '个人信息' }

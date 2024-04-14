@@ -32,15 +32,15 @@
 <!--                        <span @click="openResetPassword">忘记密码</span>-->
                         <el-checkbox v-model="checked">记住我</el-checkbox>
                     </div>
-                  <div class="tip" style="margin-top: 10px">
-                    <el-form-item prop="userType">
-                    <el-radio-group v-model="form.userType">
-                      <el-radio :label="1">管理员登录</el-radio>
-                      <el-radio :label="2" style="margin-left: 140px">学生登录</el-radio>
-<!--                      <el-radio :label="3" style="margin-left: 40px">教师登录</el-radio>-->
-                    </el-radio-group>
-                    </el-form-item>
-                  </div>
+<!--                  <div class="tip" style="margin-top: 10px">-->
+<!--                    <el-form-item prop="userType">-->
+<!--                    <el-radio-group v-model="form.userType">-->
+<!--                      <el-radio :label="1">管理员登录</el-radio>-->
+<!--                      <el-radio :label="2" style="margin-left: 140px">学生登录</el-radio>-->
+<!--&lt;!&ndash;                      <el-radio :label="3" style="margin-left: 40px">教师登录</el-radio>&ndash;&gt;-->
+<!--                    </el-radio-group>-->
+<!--                    </el-form-item>-->
+<!--                  </div>-->
                     <el-button  type="primary" style="width:100%;margin-bottom:30px;margin-top: 30px"
                                 @click.native.prevent="login">
                         <span>登 录</span>

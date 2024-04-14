@@ -166,7 +166,7 @@
 <script>
 import {} from '@/utils/validator';
 
-import { getLabList, saveLabInfo, updateLabInfo, delLabInfo, delBatchLabInfo, createLabData } from '@/api/lab';
+import { getLabList, saveLabInfo, updateLabInfo, delLabInfo, delBatchLabInfo } from '@/api/lab';
 import { getSortList } from '@/api/sort';
 import { mavonEditor } from 'mavon-editor';
 import 'mavon-editor/dist/css/index.css';
@@ -408,12 +408,12 @@ export default {
         },
 
 
-        createLabInfo() {
-            createLabData().then(res => {
-                this.getData();
-                this.$message.success('操作成功');
-            });
-        }
+        // createLabInfo() {
+        //     createLabData().then(res => {
+        //         this.getData();
+        //         this.$message.success('操作成功');
+        //     });
+        // }
 
     }
 

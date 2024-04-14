@@ -1,10 +1,10 @@
 import axios from 'axios';
 import Element from 'element-ui'
-const service = axios.create({
-    baseURL: 'https://end.lab.lchnan.cn',
-    timeout: 5000
-});
-service.interceptors.request.use(
+// const service = axios.create({
+//     baseURL: process.env.VUE_APP_CAS_BASE_URL,
+//     timeout: 5000
+// });
+axios.interceptors.request.use(
     config => {
         if (sessionStorage.getItem('Authorization')) {
             config.headers.Authorization = sessionStorage.getItem('Authorization');
@@ -16,7 +16,7 @@ service.interceptors.request.use(
         return Promise.reject();
     }
 );
-service.interceptors.response.use(
+axios.interceptors.response.use(
     response => {
         // console.log('---');
         // console.log(response);
@@ -51,4 +51,4 @@ service.interceptors.response.use(
     }
 );
 
-export default service;
+export default axios;

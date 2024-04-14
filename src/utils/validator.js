@@ -1,4 +1,8 @@
 
+export function isExternal(path) {
+    return /^(https?:|mailto:|tel:)/.test(path)
+}
+
 // 1、是否合法IP地址
 export function validateIP(rule, value,callback) {
     if(value==''||value==undefined||value==null){

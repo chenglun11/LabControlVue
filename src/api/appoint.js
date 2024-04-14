@@ -27,6 +27,14 @@ export const getAppointInfo = query =>{
     })
 };
 
+export const getSelectAll = query =>{
+    return request({
+        url:'/common/appoint/selectAll',
+        method:'get',
+    })
+};
+
+
 /**
  * 保存预约接口
  * @param data

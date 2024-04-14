@@ -46,7 +46,7 @@ export default {
             collapse: false,
             addVisible2:false,
             fullscreen: false,
-            name: 'linxin',
+            name: 'lchnan',
             systemTitle:'',
             list:[]
         };
