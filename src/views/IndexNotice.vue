@@ -5,10 +5,10 @@
 
         <el-empty style="margin: 0 auto" v-if="list.length === 0" description="暂无" />
         <el-pagination
-            :current-page="query.notpageNum"
-            :page-sizes="[8, 20, 50, 100]"
-            :page-size="query.notpageSize"
-            :total="nottotal"
+            :current-page="query.pageNum"
+            :page-sizes="[5, 20, 50, 100]"
+            :page-size="query.pageSize"
+            :total="ntotal"
             style="margin-top: 10px"
             layout="total, prev, pager, next"
             @size-change="pageSizeChange"
@@ -32,13 +32,13 @@ export default {
         return {
             list: [],
             query: {
-                notpageNum: 1,
-                notpageSize: 5,
+                pageNum: 1,
+                pageSize: 5,
 
                 authorName: null,
                 createPlace: null
             },
-            nottotal: 0,
+            ntotal: 0,
             currentKey: 0,
             baseUrl: null
         };
@@ -47,7 +47,7 @@ export default {
         getData() {
             getNoticeList(this.query).then(res => {
                 this.list = res.data.list;
-                this.nottotal = res.data.total;
+                this.ntotal = res.data.total;
             });
         },
 
